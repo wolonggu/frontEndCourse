@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.center{
+			 	text-align: center;
+			}
+			.left{
+				float: left;
+			}
+			.right{
+				float:right;
+			}
+		</style>
+		<script>
+			function rotate() {
+				document.getElementsByClassName('left')[0].className='change-later';
+    			document.getElementsByClassName('none')[0].className='left';
+				document.getElementsByClassName('right')[0].className='none';
+    			document.getElementsByClassName('change-later')[0].className='right';
+			}
+		</script>
+	</head>
+	<body>
+		<div class="center">
+			<img src="http://www.w3schools.com/images/w3html.gif" class="left" onclick="rotate()">
+			<img src="http://www.w3schools.com/images/w3css.gif" class="none" onclick="rotate()">
+			<img src="http://www.w3schools.com/images/w3javascript.gif" class="right" onclick="rotate()">
+		</div>
+	</body>
+</html>
